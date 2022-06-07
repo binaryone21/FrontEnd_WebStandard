@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02. check svg</title>
+</head>
+<body>
+    <h1>SVG 이미지 삽입하기</h1>
+    <img src="images/cat.svg" width="400px" height="400px">
+    <script>
+        if(!Modernizr.svg) {
+            document.getElementsByTagName("img")[0].setAttribute("src", "images/cat.png")
+        }
+    </script>
+    <script src="js/modernizr-custom.js"></script>
+</body>
+</html>
